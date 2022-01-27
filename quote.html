@@ -233,20 +233,20 @@
                     <!-- Options corporate-->
                     <div class="container-type" id="corporate">
                         <input class="numInp" type="number" placeholder="Number of seperate tenant companies" required>
-                        <input class="numInp" type="number" placeholder="Number of floors (without basements)" required> 
-                        <input class="numInp" type="number" placeholder="Number of basements" required>
+                        <input class="numInp" type="number" placeholder="Number of floors (without basements)" required id="numFloor-corp"> 
+                        <input class="numInp" type="number" placeholder="Number of basements" required id="numBasement-corp">
                         <input class="numInp" type="number" placeholder="Number of parking space available" required>
-                        <input class="numInp" type="number" placeholder="The maximum number of occupants per floor" required>
+                        <input class="numInp" type="number" placeholder="The maximum number of occupants per floor" required id="maxPerFloor-corp">
                     </div>
 
                     <!-- Options hybrid-->
                     <div class="container-type" id="hybrid">
                         <input class="numInp" type="number" placeholder="Number of seperate tenant companies" required>
-                        <input class="numInp" type="number" placeholder="Number of floors (without basements)" required> 
-                        <input class="numInp" type="number" placeholder="Number of basements" required>
+                        <input class="numInp" id="numFloor-hybrid" type="number" placeholder="Number of floors (without basements)" required> 
+                        <input class="numInp" id="numBasement-hybrid" type="number" placeholder="Number of basements" required>
                         <input class="numInp" type="number" placeholder="Number of parking space available" required>
-                        <input class="numInp" type="number" placeholder="The maximum number of occupants per floor" required>
-                        <input class="numInp" type="number" placeholder="Number of hours of activity of the building" required>
+                        <input class="numInp" id="maxPerFloor-hybrid" type="number" placeholder="The maximum number of occupants per floor" required>
+                        <input class="numInp" type="number" max="24" placeholder="Number of hours of activity of the building" required>
                     </div>
                 
             </div>
