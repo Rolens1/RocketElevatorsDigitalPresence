@@ -210,15 +210,15 @@
                             <option value="commercial">Commercial</option>
                             <option value="corporate">Corporate</option>
                             <option value="residential">Residential</option>
-                            <option value="residential">Hybrid</option>
+                            <option value="hybrid">Hybrid</option>
                         </select>
                     </div>
                    
                     <!-- Options residentiel-->
                     <div class="container-type" id="residential">
-                        <input class="numInp" type="number" placeholder="Number of appartments" required>
-                        <input class="numInp" type="number" placeholder="Number of floors" required>
-                        <input class="numInp" type="number" placeholder="Number of basements" required>
+                        <input class="numInp" id="numApp-resi" type="number" placeholder="Number of appartments" required>
+                        <input class="numInp" id="numfloor-resi" type="number" placeholder="Number of floors" required>
+                        <input class="numInp" type="number" placeholder="Number of basements">
                     </div>
 
                     <!-- Options commercial-->
@@ -231,7 +231,7 @@
                     </div>
 
                     <!-- Options corporate-->
-                    <div class="container-type" id="corporate" required>
+                    <div class="container-type" id="corporate">
                         <input class="numInp" type="number" placeholder="Number of seperate tenant companies" required>
                         <input class="numInp" type="number" placeholder="Number of floors (without basements)" required> 
                         <input class="numInp" type="number" placeholder="Number of basements" required>
@@ -240,11 +240,11 @@
                     </div>
 
                     <!-- Options hybrid-->
-                    <div class="container-type" id="hybrid" required>
-                        <input class="numInp" type="number" placeholder="Number of distinct businesses" required>
-                        <input class="numInp" type="number" placeholder="Number of floors (without basements)" required>
+                    <div class="container-type" id="hybrid">
+                        <input class="numInp" type="number" placeholder="Number of seperate tenant companies" required>
+                        <input class="numInp" type="number" placeholder="Number of floors (without basements)" required> 
                         <input class="numInp" type="number" placeholder="Number of basements" required>
-                        <input class="numInp" type="number" placeholder="Number of parking spaces available" required>
+                        <input class="numInp" type="number" placeholder="Number of parking space available" required>
                         <input class="numInp" type="number" placeholder="The maximum number of occupants per floor" required>
                         <input class="numInp" type="number" placeholder="Number of hours of activity of the building" required>
                     </div>
