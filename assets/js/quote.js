@@ -65,11 +65,11 @@ $('input[name=fees]').click(function() {
             interestFees = 0.16
             break;
     }
-
-    alert(interestFees)
         
 });
 
+
+var x = 0
 
 $('input').change(function() {
 
@@ -90,24 +90,36 @@ $('input').change(function() {
             break;
 
         case 'corporate':
+            x = (parseInt($('#numFloor-corp').val()) + parseInt($('#numBasement-corp').val()))
+            alert(x)
+
             //Trouver le nombre d'ascencseur total nécessaire  -> ((Etage + Sous-sol)*MaxParEtage)/1000
-            elevatorCorp = Math.ceil(((parseInt($('#numFloor-corp').val()) + parseInt($('#numBasement-corp').val())) * parseInt($('#maxPerFloor-corp').val())) / 1000)
+            elevatorCorp = Math.ceil(x *parseInt($('#maxPerFloor-corp').val()) / 1000)
+            console.log(elevatorCorp+" n ascenseur")
             //trouver le nombre de colonne d'ascenseur nécessaire  -> (Etage+Sous-sol)/20
-            numElevatorColumn = Math.ceil(parseInt($('#numFloor-corp').val()) + parseInt($('#numBasement-corp').val()) / 20)
-            //Trouver le nombre d'ascenseur pas colonne  -> Ascenseur total / Colonnes
+            numElevatorColumn = Math.ceil(x / 20)
+            console.log(numElevatorColumn+" n colonne")
+            //Trouver le nombre d'ascenseur par colonne  -> Ascenseur total / Colonnes
             numElevatorPerColumn = Math.ceil(elevatorCorp / numElevatorColumn)
+            console.log(numElevatorColumn+" n asc/colonne")
 
             numOfElevator = numElevatorPerColumn * numElevatorColumn
             break;
 
         case 'hybrid':
 
+            x = (parseInt($('#numFloor-hybrid').val()) + parseInt($('#numBasement-hybrid').val()))
+            alert(x)
+
             //Trouver le nombre d'ascencseur total nécessaire  -> ((Etage + Sous-sol)*MaxParEtage)/1000
-            elevatorCorp = Math.ceil(((parseInt($('#numFloor-hybrid').val()) + parseInt($('#numBasement-hybrid').val())) * parseInt($('#maxPerFloor-hybrid').val())) / 1000)
+            elevatorCorp = Math.ceil(x *parseInt($('#maxPerFloor-hybrid').val()) / 1000)
+            console.log(elevatorCorp+" n ascenseur")
             //trouver le nombre de colonne d'ascenseur nécessaire  -> (Etage+Sous-sol)/20
-            numElevatorColumn = Math.ceil(parseInt($('#numFloor-hybrid').val()) + parseInt($('#numBasement-hybrid').val()) / 20)
-            //Trouver le nombre d'ascenseur pas colonne  -> Ascenseur total / Colonnes
+            numElevatorColumn = Math.ceil(x / 20)
+            console.log(numElevatorColumn+" n colonne")
+            //Trouver le nombre d'ascenseur par colonne  -> Ascenseur total / Colonnes
             numElevatorPerColumn = Math.ceil(elevatorCorp / numElevatorColumn)
+            console.log(numElevatorColumn+" n asc/colonne")
 
             numOfElevator = numElevatorPerColumn * numElevatorColumn
             
