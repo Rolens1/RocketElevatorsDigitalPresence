@@ -216,53 +216,59 @@
                    
                     <!-- Options residentiel-->
                     <div class="container-type" id="residential">
-                        <input type="number" placeholder="Number of appartments" required>
-                        <input type="number" placeholder="Number of floors" required>
-                        <input type="number" placeholder="Number of basements" required>
+                        <input class="numInp" type="number" placeholder="Number of appartments" required>
+                        <input class="numInp" type="number" placeholder="Number of floors" required>
+                        <input class="numInp" type="number" placeholder="Number of basements" required>
                     </div>
 
                     <!-- Options commercial-->
                     <div class="container-type" id="commercial">
-                        <input type="number" placeholder="Number of distinct business" required>
-                        <input type="number" placeholder="Number of floors (without basements)" required>
-                        <input type="number" placeholder="Number of basements" required>
-                        <input type="number" placeholder="Number of parking space available" required>
-                        <input type="number" placeholder="Number of elevator cages to be debployed" required>
+                        <input class="numInp" type="number" placeholder="Number of distinct business" required>
+                        <input class="numInp" type="number" placeholder="Number of floors (without basements)" required>
+                        <input class="numInp" type="number" placeholder="Number of basements" required>
+                        <input class="numInp" type="number" placeholder="Number of parking space available" required>
+                        <input id="commercialInp" class="numInp" type="number" placeholder="Number of elevator cages to be debployed" required>
                     </div>
 
                     <!-- Options corporate-->
                     <div class="container-type" id="corporate" required>
-                        <input type="number" placeholder="Number of seperate tenant companies" required>
-                        <input type="number" placeholder="Number of floors (without basements)" required> 
-                        <input type="number" placeholder="Number of basements" required>
-                        <input type="number" placeholder="Number of parking space available" required>
-                        <input type="number" placeholder="The maximum number of occupants per floor" required>
+                        <input class="numInp" type="number" placeholder="Number of seperate tenant companies" required>
+                        <input class="numInp" type="number" placeholder="Number of floors (without basements)" required> 
+                        <input class="numInp" type="number" placeholder="Number of basements" required>
+                        <input class="numInp" type="number" placeholder="Number of parking space available" required>
+                        <input class="numInp" type="number" placeholder="The maximum number of occupants per floor" required>
                     </div>
 
                     <!-- Options hybrid-->
                     <div class="container-type" id="hybrid" required>
-                        <input type="number" placeholder="Number of distinct businesses" required>
-                        <input type="number" placeholder="Number of floors (without basements)" required>
-                        <input type="number" placeholder="Number of basements" required>
-                        <input type="number" placeholder="Number of parking spaces available" required>
-                        <input type="number" placeholder="The maximum number of occupants per floor" required>
-                        <input type="number" placeholder="Number of hours of activity of the building" required>
+                        <input class="numInp" type="number" placeholder="Number of distinct businesses" required>
+                        <input class="numInp" type="number" placeholder="Number of floors (without basements)" required>
+                        <input class="numInp" type="number" placeholder="Number of basements" required>
+                        <input class="numInp" type="number" placeholder="Number of parking spaces available" required>
+                        <input class="numInp" type="number" placeholder="The maximum number of occupants per floor" required>
+                        <input class="numInp" type="number" placeholder="Number of hours of activity of the building" required>
                     </div>
                 
             </div>
 
+			<input type="radio" id="standard-fees" name="fees" value="standard" /> <label for="standard-fees">Standard</label>
+			<input type="radio" id="premium-fees" name="fees" value="premium" /> <label for="premium-fees">Premium</label>
+			<input type="radio" id="excelium-fees" name="fees" value="excelium" /> <label for="excelium-fees">Excelium</label>
+
             <div class="totalPrice">
                 <div>
-                    <P>Cout Total de : </P>
-                    <p>1234,56$</p>
+					<h2>Our Pricing</h2>
+					<p id="numElevator-read">Number of elevators :</p>
+					<p id="unitElevator-read">Single unit elevator cost : </p>
+					<p id="totalElevator-read">Total price of the elevators :</p>
+					<p id="feesElevator-read">Installation fees :</p>
+					<P id="totalCost-read">Total Cost : </P>
+					<div class="heading-title heading-dotted text-center" style="width: 70vw;">
+						<h2></h2>
+					</div>
                 </div>
             </div>
             <br><br>
-
-            1 b 2 d 3a 4 d 5 c 6 a 7 c 8 b 9 a 10 d 11 d 12 b 13 c 14 b 15 c 16 d
-17 a 18 a 19 d 20 c 21 c 22 a 23 b 24 a 25 c 26!!!!! d 27 d 28 a 29 b
-30 b 31 a 32 c 33 c 34 d 35 a 36 c 37 c 38 c 39 b 40 a
-            
 
             </div>
 
