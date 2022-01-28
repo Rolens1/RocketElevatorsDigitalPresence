@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Smarty - Multipurpose + Admin</title>
+		<meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
+	</head>
+
+	<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+		
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+		
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/_smarty/boxed_background/1.jpg"
+	-->
+	<body class="smoothscroll enable-animation">
+
+		<!-- SLIDE TOP -->
+		<div id="slidetop">
+
+			<div class="container">
+				
+				<div class="row">
+
+					<div class="col-md-4">
+						<h6><i class="icon-heart"></i> Why Us</h6>
+						<p>We have the conviction that we create the most innovative and reliable products on the market. Contact us today for any questions you might have.</p>
+					</div>
+
+					<div class="col-md-4">
+						<h6><i class="fa-facheck"></i> RECENTLY VISITED</h6>
+						<ul class="list-unstyled">
+							<li><a href="index.html"><i class="fa fa-angle-right"></i> Home Page</a></li>
+							<li><a href="commercial.html"><i class="fa fa-angle-right"></i> Commercial Elevators</a></li>
+							<li><a href="quote.html"><i class="fa fa-angle-right"></i> Quote</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-4">
+						<h6><i class="icon-envelope"></i> CONTACT INFO</h6>
+						<ul class="list-unstyled">
+							<li><b>Address:</b> 418-725 Boulevard Lebourgneuf <br /> Canada, Montréal</li>
+							<li><b>Phone:</b> (418) 555-1234</li>
+							<li><b>Email:</b> <a href="mailto:support@yourname.com">infos@codeboxx.bizz</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+
+			<a class="slidetop-toggle" href="#"><!-- toggle button --></a>
+
+		</div>
+		<!-- /SLIDE TOP -->
+
+
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<!-- 
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.b-0 		= remove bottom border (only with transparent use)
+				.transparent	= transparent header
+				.translucent	= translucent header
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+				
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+
+				Example Usage:  class="clearfix sticky header-sm transparent b-0"
+			-->
+			<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- Logo -->
+						<a class="logo float-left scrollTo" href="#top">
+							<img src="assets/images/reAssets\R2.png" alt="" />
+						</a>
+
+						<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+							<nav class="nav-main">
+
+								<!-- 
+									.nav-onepage
+									Required for onepage navigation links
+									
+									Add .external for an external link!
+								-->
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									<li><!-- HOME -->
+										<a id="home-nav" href="index.html">
+											HOME
+										</a>
+									</li>	
+									<li><!-- SERVICES -->
+										<a id="services-nav" href="index.html#services">
+											SERVICES
+										</a>
+									</li>
+									<li><!-- PORTFOLIO -->
+										<a id="portfolio-nav" href="index.html#portfolio">
+											PORTFOLIO
+										</a>
+									</li>	
+									<li><!-- NEWS -->
+										<a id="news-nav" href="index.html#news">
+											NEWS
+										</a>
+									</li>	
+									<li><!-- CLIENTS -->
+										<a id="clients-nav" href="index.html#clients">
+											CLIENTS
+										</a>
+									</li>	
+									<li><!-- CONTACT -->
+										<a id="contact-nav" href="index.html#contact">
+											CONTACT
+										</a>
+									</li>		
+								</ul>
+
+							</nav>
+						</div>
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+			</div>
+
+
+
+			<!-- 
+				PAGE HEADER 
+				
+				CLASSES:
+					.page-header-xs	= 20px margins
+					.page-header-md	= 50px margins
+					.page-header-lg	= 80px margins
+					.page-header-xlg= 130px margins
+					.dark			= dark page header
+
+					.shadow-before-1 	= shadow 1 header top
+					.shadow-after-1 	= shadow 1 header bottom
+					.shadow-before-2 	= shadow 2 header top
+					.shadow-after-2 	= shadow 2 header bottom
+					.shadow-before-3 	= shadow 3 header top
+					.shadow-after-3 	= shadow 3 header bottom
+			-->
+			<section class="page-header dark page-header-xs">
+				<div class="container">
+
+					<h1>Residential</h1>
+
+				</div>
+			</section>
+			<!-- /PAGE HEADER -->
+
+
+
+
+			<!-- -->
+			<section>
+				<div class="container">
+
+					<div class="row">
+
+						<!-- POST ITEM -->
+						<div class="blog-post-item col-md-6 col-sm-6">
+
+							<!-- OWL SLIDER -->
+							<div class="owl-carousel buttons-autohide controlls-over" data-plugin-options='{"items": 1, "autoPlay": 3000, "autoHeight": false, "navigation": true, "pagination": true, "transitionStyle":"fadeUp", "progressBar":"false"}'>
+								<div>
+									<img class="img-fluid" src="assets\images\res01.jpg" alt="">
+								</div>
+								<div>
+									<img class="img-fluid" src="assets\images\res02.png" alt="">
+								</div>
+								<div>
+									<img class="img-fluid" src="assets\images\res03.jpg" alt="">
+								</div>
+							</div>
+							<!-- /OWL SLIDER -->
+
+							<h2><a href="blog-single-default.html">Different Models</a></h2>
+
+							<ul class="blog-post-info list-inline">
+								<li>
+									<a href="#">
+										<i class="fa fa-clock-o"></i> 
+										<span class="font-lato">June 29, 2017</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-comment-o"></i> 
+										<span class="font-lato">28 Comments</span>
+									</a>
+								</li>
+								<li>
+									<i class="fa fa-folder-open-o"></i> 
+
+									<a class="category" href="#">
+										<span class="font-lato">Design</span>
+									</a>
+									<a class="category" href="#">
+										<span class="font-lato">Photography</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-user"></i> 
+										<span class="font-lato">John Doe</span>
+									</a>
+								</li>
+							</ul>
+
+							<p>Browse different models from our clients to get some inspiration for yours</p>
+
+							<a href="index.html#portfolio" class="btn btn-reveal btn-default b-0 btn-shadow-1">
+								<i class="fa fa-plus"></i>
+								<span>Read More</span>
+							</a>
+
+						</div>
+						<!-- /POST ITEM -->
+
+
+						<!-- POST ITEM -->
+						<div class="blog-post-item col-md-6 col-sm-6">
+
+							<!-- IMAGE -->
+							<figure class="mb-20">
+								<img class="img-fluid" src="demo_files/images/content_slider/10-min.jpg" alt="">
+							</figure>
+
+							<h2><a href="blog-single-default.html">BLOG IMAGE POST</a></h2>
+
+							<ul class="blog-post-info list-inline">
+								<li>
+									<a href="#">
+										<i class="fa fa-clock-o"></i> 
+										<span class="font-lato">June 29, 2017</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-comment-o"></i> 
+										<span class="font-lato">28 Comments</span>
+									</a>
+								</li>
+								<li>
+									<i class="fa fa-folder-open-o"></i> 
+
+									<a class="category" href="#">
+										<span class="font-lato">Design</span>
+									</a>
+									<a class="category" href="#">
+										<span class="font-lato">Photography</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-user"></i> 
+										<span class="font-lato">John Doe</span>
+									</a>
+								</li>
+							</ul>
+
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+
+							<a href="blog-single-default.html" class="btn btn-reveal btn-default b-0 btn-shadow-1">
+								<i class="fa fa-plus"></i>
+								<span>Read More</span>
+							</a>
+
+						</div>
+						<!-- /POST ITEM -->
+
+
+						<!-- POST ITEM -->
+						<div class="blog-post-item col-md-6 col-sm-6">
+
+							<!-- VIDEO -->
+							<div class="mb-20">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe width="1175" height="661" src="https://www.youtube.com/embed/6JBBGH8rq3c?rel=0&amp;autoplay=1&mute=1" title="Elevator Youtube" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+								</div>
+							</div>
+
+							<h2><a href="blog-single-default.html">Home Design</a></h2>
+
+							<ul class="blog-post-info list-inline">
+								<li>
+									<a href="#">
+										<i class="fa fa-clock-o"></i> 
+										<span class="font-lato">June 29, 2017</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-comment-o"></i> 
+										<span class="font-lato">28 Comments</span>
+									</a>
+								</li>
+								<li>
+									<i class="fa fa-folder-open-o"></i> 
+
+									<a class="category" href="#">
+										<span class="font-lato">Design</span>
+									</a>
+									<a class="category" href="#">
+										<span class="font-lato">Photography</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-user"></i> 
+										<span class="font-lato">John Doe</span>
+									</a>
+								</li>
+							</ul>
+
+							<p>Rocket Elevator design each residential models based on your needs and our representatives and designer will help you get the most of your product</p>
+
+							<a href="quote.html" class="btn btn-reveal btn-default b-0 btn-shadow-1">
+								<i class="fa fa-plus"></i>
+								<span>Get a quote</span>
+							</a>
+
+						</div>
+						<!-- /POST ITEM -->
+
+
+						<!-- POST ITEM -->
+						<div class="blog-post-item col-md-6 col-sm-6">
+
+							<!-- VIDEO -->
+							<div class="mb-20">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/xT4DD-z312Q"></iframe>
+								</div>
+							</div>
+
+							<h2><a href="blog-single-default.html">BLOG YOUTUBE POST</a></h2>
+
+							<ul class="blog-post-info list-inline">
+								<li>
+									<a href="#">
+										<i class="fa fa-clock-o"></i> 
+										<span class="font-lato">June 29, 2017</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-comment-o"></i> 
+										<span class="font-lato">28 Comments</span>
+									</a>
+								</li>
+								<li>
+									<i class="fa fa-folder-open-o"></i> 
+
+									<a class="category" href="#">
+										<span class="font-lato">Design</span>
+									</a>
+									<a class="category" href="#">
+										<span class="font-lato">Photography</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-user"></i> 
+										<span class="font-lato">John Doe</span>
+									</a>
+								</li>
+							</ul>
+
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+
+							<a href="blog-single-default.html" class="btn btn-reveal btn-default b-0 btn-shadow-1">
+								<i class="fa fa-plus"></i>
+								<span>Read More</span>
+							</a>
+
+						</div>
+						<!-- /POST ITEM -->
+
+
+						<!-- POST ITEM -->
+						<div class="blog-post-item col-md-6 col-sm-6">
+
+							<h2><a href="blog-single-default.html">BLOG SIMPLE POST</a></h2>
+
+							<ul class="blog-post-info list-inline">
+								<li>
+									<a href="#">
+										<i class="fa fa-clock-o"></i> 
+										<span class="font-lato">June 29, 2017</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-comment-o"></i> 
+										<span class="font-lato">28 Comments</span>
+									</a>
+								</li>
+								<li>
+									<i class="fa fa-folder-open-o"></i> 
+
+									<a class="category" href="#">
+										<span class="font-lato">Design</span>
+									</a>
+									<a class="category" href="#">
+										<span class="font-lato">Photography</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-user"></i> 
+										<span class="font-lato">John Doe</span>
+									</a>
+								</li>
+							</ul>
+
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+
+							<a href="blog-single-default.html" class="btn btn-reveal btn-default b-0 btn-shadow-1">
+								<i class="fa fa-plus"></i>
+								<span>Read More</span>
+							</a>
+
+						</div>
+						<!-- /POST ITEM -->
+
+
+						<!-- POST ITEM -->
+						<div class="blog-post-item col-md-6 col-sm-6">
+
+							<h2><a href="blog-single-default.html">BLOG SIMPLE POST</a></h2>
+
+							<ul class="blog-post-info list-inline">
+								<li>
+									<a href="#">
+										<i class="fa fa-clock-o"></i> 
+										<span class="font-lato">June 29, 2017</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-comment-o"></i> 
+										<span class="font-lato">28 Comments</span>
+									</a>
+								</li>
+								<li>
+									<i class="fa fa-folder-open-o"></i> 
+
+									<a class="category" href="#">
+										<span class="font-lato">Design</span>
+									</a>
+									<a class="category" href="#">
+										<span class="font-lato">Photography</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-user"></i> 
+										<span class="font-lato">John Doe</span>
+									</a>
+								</li>
+							</ul>
+
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+
+							<a href="blog-single-default.html" class="btn btn-reveal btn-default b-0 btn-shadow-1">
+								<i class="fa fa-plus"></i>
+								<span>Read More</span>
+							</a>
+
+						</div>
+						<!-- /POST ITEM -->
+
+					</div>
+
+
+
+							<!-- PAGINATION -->
+							<div class="text-left">
+								<!-- Pagination Default -->
+								<ul class="pagination m-0">
+									<li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+									<li class="page-item active"><a class="page-link" href="#">1</a></li>
+									<li class="page-item"><a class="page-link" href="#">2</a></li>
+									<li class="page-item"><a class="page-link" href="#">3</a></li>
+									<li class="page-item"><a class="page-link" href="#">4</a></li>
+									<li class="page-item"><a class="page-link" href="#">5</a></li>
+									<li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+								</ul>
+								<!-- /Pagination Default -->
+							</div>
+							<!-- /PAGINATION -->
+
+				</div>
+			</section>
+			<!-- / -->
+
+
+
+
+			<!-- FOOTER -->
+			<footer id="footer">
+				<div class="container">
+
+
+					<div class="row">
+
+						<!-- col #1 -->
+						<div class="col-md-8">
+
+							<h3 class="letter-spacing-1">WHY US?</h3>
+
+							<!-- Small Description -->
+							<p>
+								We have the conviction that we create the most innovative and reliable products on the market. Contact us today for any questions you might have.
+							</p>
+							<h2>(418) 555-1234</h2>
+						</div>
+						<!-- /col #1 -->
+
+						<!-- col #2 -->
+						<div class="col-md-4">
+							<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+
+							<!-- Newsletter Form -->
+							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
+
+							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+									<span class="input-group-btn">
+										<button class="btn btn-success" type="submit">Subscribe</button>
+									</span>
+								</div>
+							</form>
+							<!-- /Newsletter Form -->
+
+
+						</div>
+						<!-- /col #2 -->
+
+					</div>
+
+
+				</div>
+
+				<div class="copyright">
+					<div class="container">
+						<ul class="float-right m-0 list-inline mobile-block">
+							<li><a href="#">Terms &amp; Conditions</a></li>
+							<li>&bull;</li>
+							<li><a href="#">Privacy</a></li>
+						</ul>
+						&copy; All Rights Reserved, Codeboxx
+					</div>
+				</div>
+
+			</footer>
+			<!-- /FOOTER -->
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script>var plugin_path = 'assets/plugins/';</script>
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+		<script src="assets/js/scripts.js"></script>
+		
+		<!-- STYLESWITCHER - REMOVE -->
+		<script async src="demo_files/styleswitcher/styleswitcher.js"></script>
+	</body>
+</html>

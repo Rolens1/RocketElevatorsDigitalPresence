@@ -60,27 +60,25 @@
 				<div class="row">
 
 					<div class="col-md-4">
-						<h6><i class="icon-heart"></i> WHY SMARTY?</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. </p>
+						<h6><i class="icon-heart"></i> Why Us</h6>
+						<p>We have the conviction that we create the most innovative and reliable products on the market. Contact us today for any questions you might have.</p>
 					</div>
 
 					<div class="col-md-4">
 						<h6><i class="fa-facheck"></i> RECENTLY VISITED</h6>
 						<ul class="list-unstyled">
-							<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet</a></li>
-							<li><a href="#"><i class="fa fa-angle-right"></i> This is a very long text, very very very very very very very very very very very very </a></li>
-							<li><a href="#"><i class="fa fa-angle-right"></i> Lorem ipsum dolor sit amet</a></li>
-							<li><a href="#"><i class="fa fa-angle-right"></i> Dolor sit amet,consectetur adipiscing elit amet</a></li>
-							<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet,consectetur adipiscing elit</a></li>
+							<li><a href="residential.html"><i class="fa fa-angle-right"></i> Residential Elevators</a></li>
+							<li><a href="commercial.html"><i class="fa fa-angle-right"></i> Commercial Elevators</a></li>
+							<li><a href="index.html"><i class="fa fa-angle-right"></i> Home Page</a></li>
 						</ul>
 					</div>
 
 					<div class="col-md-4">
 						<h6><i class="icon-envelope"></i> CONTACT INFO</h6>
 						<ul class="list-unstyled">
-							<li><b>Address:</b> PO Box 21132, Here Weare St, <br /> Melbourne, Vivas 2355 Australia</li>
-							<li><b>Phone:</b> 1-800-565-2390</li>
-							<li><b>Email:</b> <a href="mailto:support@yourname.com">support@yourname.com</a></li>
+							<li><b>Address:</b> 418-725 Boulevard Lebourgneuf <br /> Canada, Montréal</li>
+							<li><b>Phone:</b> (418) 555-1234</li>
+							<li><b>Email:</b> <a href="mailto:support@yourname.com">infos@codeboxx.bizz</a></li>
 						</ul>
 					</div>
 
@@ -161,27 +159,27 @@
 										</a>
 									</li>	
 									<li><!-- SERVICES -->
-										<a id="services-nav" href="#services">
+										<a id="services-nav" href="index.html#services">
 											SERVICES
 										</a>
 									</li>
 									<li><!-- PORTFOLIO -->
-										<a id="portfolio-nav" href="#portfolio">
+										<a id="portfolio-nav" href="index.html#portfolio">
 											PORTFOLIO
 										</a>
 									</li>	
 									<li><!-- NEWS -->
-										<a id="news-nav" href="#news">
+										<a id="news-nav" href="index.html#news">
 											NEWS
 										</a>
 									</li>	
 									<li><!-- CLIENTS -->
-										<a id="clients-nav" href="#clients">
+										<a id="clients-nav" href="index.html#clients">
 											CLIENTS
 										</a>
 									</li>	
 									<li><!-- CONTACT -->
-										<a id="contact-nav" href="#contact">
+										<a id="contact-nav" href="index.html#contact">
 											CONTACT
 										</a>
 									</li>		
@@ -216,37 +214,37 @@
                    
                     <!-- Options residentiel-->
                     <div class="container-type" id="residential">
-                        <input class="numInp" id="numApp-resi" type="number" placeholder="Number of appartments" required>
-                        <input class="numInp" id="numfloor-resi" type="number" placeholder="Number of floors" required>
+                        <input class="numInp" id="numApp-resi" type="number" placeholder="Number of appartments" min="0" required>
+                        <input class="numInp" id="numfloor-resi" type="number" placeholder="Number of floors" min="0" required>
                         <input class="numInp" type="number" placeholder="Number of basements">
                     </div>
 
                     <!-- Options commercial-->
                     <div class="container-type" id="commercial">
-                        <input class="numInp" type="number" placeholder="Number of distinct business" required>
-                        <input class="numInp" type="number" placeholder="Number of floors (without basements)" required>
-                        <input class="numInp" type="number" placeholder="Number of basements" required>
-                        <input class="numInp" type="number" placeholder="Number of parking space available" required>
-                        <input id="commercialInp" class="numInp" type="number" placeholder="Number of elevator cages to be debployed" required>
+                        <input class="numInp" type="number" placeholder="Number of distinct business" min="0" required>
+                        <input class="numInp" type="number" placeholder="Number of floors (without basements)" min="0" required>
+                        <input class="numInp" type="number" placeholder="Number of basements" min="0" required>
+                        <input class="numInp" type="number" placeholder="Number of parking space available" min="0" required>
+                        <input id="commercialInp" class="numInp" type="number" placeholder="Number of elevator cages to be debployed" min="0" required>
                     </div>
 
                     <!-- Options corporate-->
                     <div class="container-type" id="corporate">
-                        <input class="numInp" type="number" placeholder="Number of seperate tenant companies" required>
-                        <input class="numInp" type="number" placeholder="Number of floors (without basements)" required id="numFloor-corp"> 
-                        <input class="numInp" type="number" placeholder="Number of basements" required id="numBasement-corp">
-                        <input class="numInp" type="number" placeholder="Number of parking space available" required>
-                        <input class="numInp" type="number" placeholder="The maximum number of occupants per floor" required id="maxPerFloor-corp">
+                        <input class="numInp" type="number" placeholder="Number of seperate tenant companies" min="0" required>
+                        <input class="numInp" type="number" placeholder="Number of floors (without basements)" min="0" required id="numFloor-corp"> 
+                        <input class="numInp" type="number" placeholder="Number of basements" min="0" required id="numBasement-corp">
+                        <input class="numInp" type="number" placeholder="Number of parking space available" min="0" required>
+                        <input class="numInp" type="number" placeholder="The maximum number of occupants per floor" min="0" required id="maxPerFloor-corp">
                     </div>
 
                     <!-- Options hybrid-->
                     <div class="container-type" id="hybrid">
-                        <input class="numInp" type="number" placeholder="Number of seperate tenant companies" required>
-                        <input class="numInp" id="numFloor-hybrid" type="number" placeholder="Number of floors (without basements)" required> 
-                        <input class="numInp" id="numBasement-hybrid" type="number" placeholder="Number of basements" required>
-                        <input class="numInp" type="number" placeholder="Number of parking space available" required>
-                        <input class="numInp" id="maxPerFloor-hybrid" type="number" placeholder="The maximum number of occupants per floor" required>
-                        <input class="numInp" type="number" max="24" placeholder="Number of hours of activity of the building" required>
+                        <input class="numInp" type="number" placeholder="Number of seperate tenant companies" min="0" required>
+                        <input class="numInp" id="numFloor-hybrid" type="number" placeholder="Number of floors (without basements)" min="0" required> 
+                        <input class="numInp" id="numBasement-hybrid" type="number" placeholder="Number of basements" min="0" required>
+                        <input class="numInp" type="number" placeholder="Number of parking space available" min="0" required>
+                        <input class="numInp" id="maxPerFloor-hybrid" type="number" placeholder="The maximum number of occupants per floor" min="0" required>
+                        <input class="numInp" type="number" max="24" placeholder="Number of hours of activity of the building" min="0" required>
                     </div>
                 
             </div>

@@ -1,3 +1,8 @@
 /** CONSTRUCTION 
 	home-theme-construction.html 
  ********************************************* **/
+
+ .btn-warning {
+	 background-color: blue;
+	 border-color: blue;
+ }
