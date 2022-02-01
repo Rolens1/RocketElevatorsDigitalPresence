@@ -23,6 +23,7 @@
 		<!-- THEME CSS -->
 		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="assets/css/qutoestyle.css">
 
 		<!-- PAGE LEVEL SCRIPTS -->
 		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
@@ -212,20 +213,46 @@
                         </select>
                     </div>
                    
+
                     <!-- Options residentiel-->
                     <div class="container-type" id="residential">
-                        <input class="numInp" id="numApp-resi" type="number" placeholder="Number of appartments" min="0" required>
-                        <input class="numInp" id="numfloor-resi" type="number" placeholder="Number of floors" min="0" required>
-                        <input class="numInp" type="number" placeholder="Number of basements">
+						<div class="label-wrap">
+							<label for="numApp-resi" class="floating-label">Number of appartments</label>
+							<input class="numInp" id="numApp-resi" type="number" min="0" required>
+						</div>
+						<div class="label-wrap">
+							<label for="numfloor-resi" class="floating-label">Number of floors</label>                        
+							<input class="numInp" id="numfloor-resi" type="number" min="0" required>
+						</div>
+						<div class="label-wrap">
+							<input class="numInp" type="number" placeholder="Number of basements">
+							<label for="" class="floating-label"></label>
+						</div>
+                        
                     </div>
 
                     <!-- Options commercial-->
                     <div class="container-type" id="commercial">
-                        <input class="numInp" type="number" placeholder="Number of distinct business" min="0" required>
-                        <input class="numInp" type="number" placeholder="Number of floors (without basements)" min="0" required>
-                        <input class="numInp" type="number" placeholder="Number of basements" min="0" required>
-                        <input class="numInp" type="number" placeholder="Number of parking space available" min="0" required>
-                        <input id="commercialInp" class="numInp" type="number" placeholder="Number of elevator cages to be debployed" min="0" required>
+						<div class="label-wrap">
+							<input class="numInp" type="number" placeholder="Number of distinct business" min="0" required>
+							<label for="" class="floating-label"></label>
+						</div>
+                        <div class="label-wrap">
+							<input class="numInp" type="number" placeholder="Number of floors (without basements)" min="0" required>
+							<label for=""></label>
+						</div>
+						<div class="label-wrap">
+							<input class="numInp" type="number" placeholder="Number of basements" min="0" required>
+							<label for=""></label>
+						</div>
+                        <div class="label-wrap">
+							<input class="numInp" type="number" placeholder="Number of parking space available" min="0" required>
+							<label for=""></label>
+						</div>
+                        <div class="label-wrap">
+							<input id="commercialInp" class="numInp" type="number" placeholder="Number of elevator cages to be debployed" min="0" required>
+							<label for=""></label>
+						</div>
                     </div>
 
                     <!-- Options corporate-->
@@ -248,11 +275,13 @@
                     </div>
                 
             </div>
-
-			<input type="radio" id="standard-fees" name="fees" value="standard" /> <label for="standard-fees">Standard</label>
+			<div class="totalPrice">
+				<input type="radio" id="standard-fees" name="fees" value="standard" /> <label for="standard-fees">Standard</label>
 			<input type="radio" id="premium-fees" name="fees" value="premium" /> <label for="premium-fees">Premium</label>
 			<input type="radio" id="excelium-fees" name="fees" value="excelium" /> <label for="excelium-fees">Excelium</label>
 
+			</div>
+			
             <div class="totalPrice">
                 <div>
 					<h2>Our Pricing</h2>
@@ -261,11 +290,13 @@
 					<p id="totalElevator-read">Total price of the elevators :</p>
 					<p id="feesElevator-read">Installation fees :</p>
 					<P id="totalCost-read">Total Cost : </P>
-					<div class="heading-title heading-dotted text-center" style="width: 70vw;">
-						<h2></h2>
-					</div>
+					
                 </div>
             </div>
+
+			<div class="heading-title heading-dotted text-center" style="width: 70vw;">
+				<h2></h2>
+			</div>
             <br><br>
 
             </div>

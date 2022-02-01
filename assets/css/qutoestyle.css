@@ -1,3 +1,34 @@
 .container-type {
-    display: none;
+    border: 2px dashed black;
+    width: 60%;
+}
+
+.totalPrice {
+    border: 5px solid black;
+    transform: translateX(25%);
+    left: 25%;
+    top: 50%;
+    width: 40%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.totalPrice p {
+    border: 2px dashed black;
+}
+
+.numInp {
+    width: 20%;
+    border: none;
+    border-bottom: 3px solid black;
+}
+
+.label-wrap {
+    display: flex;
+    width: max-content;
+    padding: 5px;
+}
+
+.label-wrap label {
+    width: 300px;
 }
