@@ -23,7 +23,7 @@
 		<!-- THEME CSS -->
 		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
-		<link rel="stylesheet" href="assets/css/qutoestyle.css">
+		<link rel="stylesheet" href="assets/css/quotestyle.css">
 
 		<!-- PAGE LEVEL SCRIPTS -->
 		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
@@ -201,7 +201,7 @@
 
             <div class="container">
 
-                    <div>
+                    <div class="select-option">
                         <label for="type">Select your building type</label>
 
                         <select name="" id="buildType">
@@ -305,7 +305,7 @@
 						<!-- Bug a cause de max-->
 						<div class="label-wrap" id="business-hours">
 							<label for="hybr`">Number of activity hours</label>
-							<input class="numInp" id="hybr-useless-2" type="number" min="0" max="24" required>
+							<input class="numInp" id="hybr-useless-2" type="number" min="0"  required>
 						</div>	
 							
                         
@@ -439,31 +439,6 @@
 			GMAP.JS 
 			http://hpneo.github.io/gmaps/
 		-->
-		<script src="//maps.google.com/maps/api/js?key=AIzaSyCqCn84CgZN6o1Xc3P4dM657HIxkX3jzPY"></script>
-		<script src="assets/plugins/gmaps.js"></script>
-		<script>
-
-			jQuery(document).ready(function(){
-
-				/**
-					@BASIC GOOGLE MAP
-				**/
-				var map2 = new GMaps({
-					div: '#map2',
-					lat: 46.83580880975302,
-					lng: -71.29180222864782,
-					scrollwheel: true				
-				});
-
-				var marker = map2.addMarker({
-					lat: 46.83580880975302,
-					lng: -71.29180222864782,
-					title: 'Codeboxx'
-				});
-
-			});
-
-		</script>
 
         <script src="assets\js\quote.js"></script>
 	</body>
