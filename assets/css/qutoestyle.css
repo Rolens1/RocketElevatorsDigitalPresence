@@ -1,6 +1,6 @@
 .container-type {
     border: 2px dashed black;
-    width: 60%;
+    width: fit-content;
 }
 
 .totalPrice {
@@ -21,6 +21,7 @@
     width: 20%;
     border: none;
     border-bottom: 3px solid black;
+    
 }
 
 .label-wrap {

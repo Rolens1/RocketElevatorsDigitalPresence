@@ -216,17 +216,17 @@
 
                     <!-- Options residentiel-->
                     <div class="container-type" id="residential">
-						<div class="label-wrap">
+						<div class="label-wrap" id="number-of-appartments">
 							<label for="numApp-resi" class="floating-label">Number of appartments</label>
 							<input class="numInp" id="numApp-resi" type="number" min="0" required>
 						</div>
-						<div class="label-wrap">
+						<div class="label-wrap" id="number-of-floors">
 							<label for="numfloor-resi" class="floating-label">Number of floors</label>                        
 							<input class="numInp" id="numfloor-resi" type="number" min="0" required>
 						</div>
-						<div class="label-wrap">
-							<input class="numInp" type="number" placeholder="Number of basements">
-							<label for="" class="floating-label"></label>
+						<div class="label-wrap" id="number-of-basements">
+							<label for="numBasement" class="floating-label">Number of basements</label>
+							<input id="numBasement" class="numInp" type="number">
 						</div>
                         
                     </div>
@@ -234,62 +234,100 @@
                     <!-- Options commercial-->
                     <div class="container-type" id="commercial">
 						<div class="label-wrap">
-							<input class="numInp" type="number" placeholder="Number of distinct business" min="0" required>
-							<label for="" class="floating-label"></label>
+							<label for="comm-useless-1" class="floating-label">Number of Distinct Businesses</label>
+							<input class="numInp" id="comm-useless-1" type="number" min="0" required>
 						</div>
-                        <div class="label-wrap">
-							<input class="numInp" type="number" placeholder="Number of floors (without basements)" min="0" required>
-							<label for=""></label>
+                        <div class="label-wrap" id="number-of-floors">
+							<label for="comm-useless-2">Number of Floors</label>
+							<input class="numInp" id="comm-useless-2" type="number"  min="0" required>
 						</div>
-						<div class="label-wrap">
-							<input class="numInp" type="number" placeholder="Number of basements" min="0" required>
-							<label for=""></label>
+						<div class="label-wrap" id="number-of-basements">
+							<label for="comm-useless-3">Number of Basements</label>
+							<input class="numInp" id="comm-useless-3" type="number" min="0" required>
 						</div>
-                        <div class="label-wrap">
-							<input class="numInp" type="number" placeholder="Number of parking space available" min="0" required>
-							<label for=""></label>
+                        <div class="label-wrap" id="number-of-parking-spots">
+							<label for="comm-useless-4">Number of Parking Spots</label>
+							<input class="numInp" id="comm-useless-4" type="number" min="0" required>
 						</div>
-                        <div class="label-wrap">
-							<input id="commercialInp" class="numInp" type="number" placeholder="Number of elevator cages to be debployed" min="0" required>
-							<label for=""></label>
+                        <div class="label-wrap" id="number-of-elevators">
+							<label for="commercialInp">Number of elevator cages</label>
+							<input id="commercialInp" class="numInp" type="number" min="0" required>
 						</div>
                     </div>
 
                     <!-- Options corporate-->
                     <div class="container-type" id="corporate">
-                        <input class="numInp" type="number" placeholder="Number of seperate tenant companies" min="0" required>
-                        <input class="numInp" type="number" placeholder="Number of floors (without basements)" min="0" required id="numFloor-corp"> 
-                        <input class="numInp" type="number" placeholder="Number of basements" min="0" required id="numBasement-corp">
-                        <input class="numInp" type="number" placeholder="Number of parking space available" min="0" required>
-                        <input class="numInp" type="number" placeholder="The maximum number of occupants per floor" min="0" required id="maxPerFloor-corp">
+						<div class="label-wrap" id="numbe-of-floors">
+							<label for="numFloor-corp">Number of floors</label>
+							<input class="numInp" type="number" min="0" required id="numFloor-corp"> 
+						</div>
+						<div class="label-wrap" id="number-of-basements">
+							<label for="numBasement-corp">Number of Basements</label>
+							<input class="numInp" type="number" min="0" required id="numBasement-corp">
+						</div>
+						<div class="label-wrap" id="number-of-parking-spots">
+							<label for="corp-useless-1">Number of Parking Spots</label>
+							<input class="numInp" id="corp-useless-1" type="number" min="0" required>
+						</div>
+						<div class="label-wrap" id="number-of-corporations">
+							<label for="corp-useless-2">Number of Seperate Tenant Companies</label>
+							<input class="numInp" type="number" id="corp-useless-2" min="0" required>
+						</div>
+						<div class="label-wrap" id="maximun-occupancy">
+							<label for="maxPerFloor-corp">Maximum Number of Occupants per Floor</label>
+							<input class="numInp" type="number" min="0" required id="maxPerFloor-corp">
+						</div>	
                     </div>
 
                     <!-- Options hybrid-->
                     <div class="container-type" id="hybrid">
-                        <input class="numInp" type="number" placeholder="Number of seperate tenant companies" min="0" required>
-                        <input class="numInp" id="numFloor-hybrid" type="number" placeholder="Number of floors (without basements)" min="0" required> 
-                        <input class="numInp" id="numBasement-hybrid" type="number" placeholder="Number of basements" min="0" required>
-                        <input class="numInp" type="number" placeholder="Number of parking space available" min="0" required>
-                        <input class="numInp" id="maxPerFloor-hybrid" type="number" placeholder="The maximum number of occupants per floor" min="0" required>
-                        <input class="numInp" type="number" max="24" placeholder="Number of hours of activity of the building" min="0" required>
+						<div class="label-wrap" id="numbe-of-floors">
+							<label for="numFloor-hybrid">Number of floors</label>
+							<input class="numInp" id="numFloor-hybrid" type="number" min="0" required> 
+						</div>
+						<div class="label-wrap" id="number-of-basements">
+							<label for="numBasement-hybrid">Number of Basements</label>
+							<input class="numInp" id="numBasement-hybrid" type="number" min="0" required>
+						</div>
+						<div class="label-wrap" id="number-of-parking-spots">
+							<label for="hybr-useless-1">Number of Parking Spots</label>
+							<input class="numInp" id="hybr-useless-1" type="number" min="0" required>
+						</div>
+						<div class="label-wrap" id="number-of-corporations">
+							<label for="hybr-useless-2">Number of Seperate Tenant Companies</label>
+							<input class="numInp" type="number" id="hybr-useless-2" min="0" required>
+						</div>
+
+						<div class="label-wrap" id="maximun-occupancy">
+							<label for="maxPerFloor-hybrid">Maximum Number of Occupants per Floor</label>
+							<input class="numInp" id="maxPerFloor-hybrid" type="number" min="0" required>
+						</div>	
+						<!-- Bug a cause de max-->
+						<div class="label-wrap" id="business-hours">
+							<label for="hybr`">Number of activity hours</label>
+							<input class="numInp" id="hybr-useless-2" type="number" min="0" max="24" required>
+						</div>	
+							
+                        
+                        
                     </div>
                 
             </div>
 			<div class="totalPrice">
-				<input type="radio" id="standard-fees" name="fees" value="standard" /> <label for="standard-fees">Standard</label>
-			<input type="radio" id="premium-fees" name="fees" value="premium" /> <label for="premium-fees">Premium</label>
-			<input type="radio" id="excelium-fees" name="fees" value="excelium" /> <label for="excelium-fees">Excelium</label>
+				<input type="radio" id="standard" name="fees" value="standard" /> <label for="standard">Standard</label>
+			<input type="radio" id="premium" name="fees" value="premium" /> <label for="premium">Premium</label>
+			<input type="radio" id="excelium" name="fees" value="excelium" /> <label for="excelium">Excelium</label>
 
 			</div>
 			
             <div class="totalPrice">
                 <div>
 					<h2>Our Pricing</h2>
-					<p id="numElevator-read">Number of elevators :</p>
-					<p id="unitElevator-read">Single unit elevator cost : </p>
-					<p id="totalElevator-read">Total price of the elevators :</p>
-					<p id="feesElevator-read">Installation fees :</p>
-					<P id="totalCost-read">Total Cost : </P>
+					<p id="elevator-amount">Number of elevators :</p>
+					<p id="elevator-unit-price">Single unit elevator cost : </p>
+					<p id="elevator-total-price">Total price of the elevators :</p>
+					<p id="installation-fees">Installation fees :</p>
+					<P id="final-price">Total Cost : </P>
 					
                 </div>
             </div>
