@@ -199,19 +199,23 @@
                 <h2>Request a quote</h2>
             </div>
 
-            <div class="container">
+            <div class="">
 
-                    <div class="select-option">
-                        <label for="type">Select your building type</label>
+				<div class="totalPrice">
+				
+                    <label for="type">Select your building type</label>
 
-                        <select name="" id="buildType">
-                            <option value="">Select</option>
-                            <option value="commercial">Commercial</option>
-                            <option value="corporate">Corporate</option>
-                            <option value="residential">Residential</option>
-                            <option value="hybrid">Hybrid</option>
-                        </select>
-                    </div>
+                    <select name="" id="buildType">
+                        <option value="">Select</option>
+                        <option value="commercial">Commercial</option>
+                        <option value="corporate">Corporate</option>
+                        <option value="residential">Residential</option>
+                        <option value="hybrid">Hybrid</option>
+                    </select>
+                
+
+				
+                    
                    
 
                     <!-- Options residentiel-->
@@ -308,11 +312,11 @@
 							<input class="numInp" id="hybr-useless-2" type="number" min="0"  required>
 						</div>	
 							
+                        </div>
                         
-                        
-                    </div>
+             </div>
                 
-            </div>
+            	</div>
 			<div class="totalPrice">
 				<input type="radio" id="standard" name="fees" value="standard" /> <label for="standard">Standard</label>
 			<input type="radio" id="premium" name="fees" value="premium" /> <label for="premium">Premium</label>
@@ -360,28 +364,6 @@
 							<h2>(418) 555-1234</h2>
 						</div>
 						<!-- /col #1 -->
-
-						<!-- col #2 -->
-						<div class="col-md-4">
-							<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
-
-							<!-- Newsletter Form -->
-							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
-
-							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
-									<span class="input-group-btn">
-										<button class="btn btn-success" type="submit">Subscribe</button>
-									</span>
-								</div>
-							</form>
-							<!-- /Newsletter Form -->
-
-
-						</div>
-						<!-- /col #2 -->
 
 					</div>
 
