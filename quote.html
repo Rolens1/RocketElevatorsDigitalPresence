@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>Smarty - Multipurpose + Admin</title>
+		<title>Quote Page</title>
 		<meta name="description" content="" />
 		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
 
@@ -23,6 +23,7 @@
 		<!-- THEME CSS -->
 		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="assets/css/quotestyle.css">
 
 		<!-- PAGE LEVEL SCRIPTS -->
 		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
@@ -60,27 +61,25 @@
 				<div class="row">
 
 					<div class="col-md-4">
-						<h6><i class="icon-heart"></i> WHY SMARTY?</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. </p>
+						<h6><i class="icon-heart"></i> Why Us</h6>
+						<p>We have the conviction that we create the most innovative and reliable products on the market. Contact us today for any questions you might have.</p>
 					</div>
 
 					<div class="col-md-4">
 						<h6><i class="fa-facheck"></i> RECENTLY VISITED</h6>
 						<ul class="list-unstyled">
-							<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet</a></li>
-							<li><a href="#"><i class="fa fa-angle-right"></i> This is a very long text, very very very very very very very very very very very very </a></li>
-							<li><a href="#"><i class="fa fa-angle-right"></i> Lorem ipsum dolor sit amet</a></li>
-							<li><a href="#"><i class="fa fa-angle-right"></i> Dolor sit amet,consectetur adipiscing elit amet</a></li>
-							<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet,consectetur adipiscing elit</a></li>
+							<li><a href="residential.html"><i class="fa fa-angle-right"></i> Residential Elevators</a></li>
+							<li><a href="corporate.html"><i class="fa fa-angle-right"></i> Corporate Elevators</a></li>
+							<li><a href="index.html"><i class="fa fa-angle-right"></i> Home Page</a></li>
 						</ul>
 					</div>
 
 					<div class="col-md-4">
 						<h6><i class="icon-envelope"></i> CONTACT INFO</h6>
 						<ul class="list-unstyled">
-							<li><b>Address:</b> PO Box 21132, Here Weare St, <br /> Melbourne, Vivas 2355 Australia</li>
-							<li><b>Phone:</b> 1-800-565-2390</li>
-							<li><b>Email:</b> <a href="mailto:support@yourname.com">support@yourname.com</a></li>
+							<li><b>Address:</b> 418-725 Boulevard Lebourgneuf <br /> Canada, Montréal</li>
+							<li><b>Phone:</b> (418) 555-1234</li>
+							<li><b>Email:</b>infos@codeboxx.bizz</li>
 						</ul>
 					</div>
 
@@ -136,7 +135,7 @@
 
 						<!-- Logo -->
 						<a class="logo float-left scrollTo" href="#top">
-							<img src="Rocket Elevator Assets\R2.png" alt="" />
+							<img src="assets/images/reAssets\R2.png" alt="" />
 						</a>
 
 						<!-- 
@@ -156,32 +155,32 @@
 								-->
 								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
 									<li><!-- HOME -->
-										<a id="home-nav" href="#">
+										<a id="home-nav" href="index.html">
 											HOME
 										</a>
 									</li>	
 									<li><!-- SERVICES -->
-										<a id="services-nav" href="#services">
+										<a id="services-nav" href="index.html#services">
 											SERVICES
 										</a>
 									</li>
 									<li><!-- PORTFOLIO -->
-										<a id="portfolio-nav" href="#portfolio">
+										<a id="portfolio-nav" href="index.html#portfolio">
 											PORTFOLIO
 										</a>
 									</li>	
 									<li><!-- NEWS -->
-										<a id="news-nav" href="#news">
+										<a id="news-nav" href="index.html#news">
 											NEWS
 										</a>
 									</li>	
 									<li><!-- CLIENTS -->
-										<a id="clients-nav" href="#clients">
+										<a id="clients-nav" href="index.html#clients">
 											CLIENTS
 										</a>
 									</li>	
 									<li><!-- CONTACT -->
-										<a id="contact-nav" href="#contact">
+										<a id="contact-nav" href="index.html#contact">
 											CONTACT
 										</a>
 									</li>		
@@ -200,74 +199,141 @@
                 <h2>Request a quote</h2>
             </div>
 
-            <div class="container">
+            <div class="">
 
-                    <div>
-                        <label for="type">Select your building type</label>
+				<div class="totalPrice">
+				
+                    <label for="type">Select your building type</label>
 
-                        <select name="" id="buildType">
-                            <option value="">Select</option>
-                            <option value="commercial">Commercial</option>
-                            <option value="corporate">Corporate</option>
-                            <option value="residential">Residential</option>
-                            <option value="residential">Hybrid</option>
-                        </select>
-                    </div>
-                   
+                    <select name="" id="buildType">
+                        <option value="">Select</option>
+                        <option data-filter="commercial" value="commercial">Commercial</option>
+                        <option data-filter="corporate" value="corporate">Corporate</option>
+                        <option data-filter="residential" value="residential">Residential</option>
+                        <option data-filter="hybrid" value="hybrid">Hybrid</option>
+                    </select>
+
                     <!-- Options residentiel-->
                     <div class="container-type" id="residential">
-                        <input class="numInp" type="number" placeholder="Number of appartments" required>
-                        <input class="numInp" type="number" placeholder="Number of floors" required>
-                        <input class="numInp" type="number" placeholder="Number of basements" required>
+						<div class="label-wrap" id="number-of-appartments">
+							<label for="numApp-resi" class="floating-label">Number of appartments</label>
+							<input class="numInp" id="numApp-resi" type="number" min="0" required>
+						</div>
+						<div class="label-wrap" id="number-of-floors">
+							<label for="numfloor-resi" class="floating-label">Number of floors</label>
+							<input class="numInp" id="numfloor-resi" type="number" min="0" required>
+						</div>
+						<div class="label-wrap" id="number-of-basements">
+							<label for="numBasement" class="floating-label">Number of basements</label>
+							<input id="numBasement" class="numInp" type="number">
+						</div>
+                        
                     </div>
 
                     <!-- Options commercial-->
                     <div class="container-type" id="commercial">
-                        <input class="numInp" type="number" placeholder="Number of distinct business" required>
-                        <input class="numInp" type="number" placeholder="Number of floors (without basements)" required>
-                        <input class="numInp" type="number" placeholder="Number of basements" required>
-                        <input class="numInp" type="number" placeholder="Number of parking space available" required>
-                        <input id="commercialInp" class="numInp" type="number" placeholder="Number of elevator cages to be debployed" required>
+						<div class="label-wrap">
+							<label for="comm-useless-1" class="floating-label">Number of Distinct Businesses</label>
+							<input class="numInp" id="comm-useless-1" type="number" min="0" required>
+						</div>
+                        <div class="label-wrap" id="number-of-floors">
+							<label for="comm-useless-2">Number of Floors</label>
+							<input class="numInp" id="comm-useless-2" type="number"  min="0" required>
+						</div>
+						<div class="label-wrap" id="number-of-basements">
+							<label for="comm-useless-3">Number of Basements</label>
+							<input class="numInp" id="comm-useless-3" type="number" min="0" required>
+						</div>
+                        <div class="label-wrap" id="number-of-parking-spots">
+							<label for="comm-useless-4">Number of Parking Spots</label>
+							<input class="numInp" id="comm-useless-4" type="number" min="0" required>
+						</div>
+                        <div class="label-wrap" id="number-of-elevators">
+							<label for="commercialInp">Number of elevator cages</label>
+							<input id="commercialInp" class="numInp" type="number" min="0" required>
+						</div>
                     </div>
 
                     <!-- Options corporate-->
-                    <div class="container-type" id="corporate" required>
-                        <input class="numInp" type="number" placeholder="Number of seperate tenant companies" required>
-                        <input class="numInp" type="number" placeholder="Number of floors (without basements)" required> 
-                        <input class="numInp" type="number" placeholder="Number of basements" required>
-                        <input class="numInp" type="number" placeholder="Number of parking space available" required>
-                        <input class="numInp" type="number" placeholder="The maximum number of occupants per floor" required>
+                    <div class="container-type" id="corporate">
+						<div class="label-wrap" id="numbe-of-floors">
+							<label for="numFloor-corp">Number of floors</label>
+							<input class="numInp" type="number" min="0" required id="numFloor-corp"> 
+						</div>
+						<div class="label-wrap" id="number-of-basements">
+							<label for="numBasement-corp">Number of Basements</label>
+							<input class="numInp" type="number" min="0" required id="numBasement-corp">
+						</div>
+						<div class="label-wrap" id="number-of-parking-spots">
+							<label for="corp-useless-1">Number of Parking Spots</label>
+							<input class="numInp" id="corp-useless-1" type="number" min="0" required>
+						</div>
+						<div class="label-wrap" id="number-of-corporations">
+							<label for="corp-useless-2">Number of Seperate Tenant Companies</label>
+							<input class="numInp" type="number" id="corp-useless-2" min="0" required>
+						</div>
+						<div class="label-wrap" id="maximun-occupancy">
+							<label for="maxPerFloor-corp">Maximum Number of Occupants per Floor</label>
+							<input class="numInp" type="number" min="0" required id="maxPerFloor-corp">
+						</div>	
                     </div>
 
                     <!-- Options hybrid-->
-                    <div class="container-type" id="hybrid" required>
-                        <input class="numInp" type="number" placeholder="Number of distinct businesses" required>
-                        <input class="numInp" type="number" placeholder="Number of floors (without basements)" required>
-                        <input class="numInp" type="number" placeholder="Number of basements" required>
-                        <input class="numInp" type="number" placeholder="Number of parking spaces available" required>
-                        <input class="numInp" type="number" placeholder="The maximum number of occupants per floor" required>
-                        <input class="numInp" type="number" placeholder="Number of hours of activity of the building" required>
-                    </div>
+                    <div class="container-type" id="hybrid">
+						<div class="label-wrap" id="numbe-of-floors">
+							<label for="numFloor-hybrid">Number of floors</label>
+							<input class="numInp" id="numFloor-hybrid" type="number" min="0" required> 
+						</div>
+						<div class="label-wrap" id="number-of-basements">
+							<label for="numBasement-hybrid">Number of Basements</label>
+							<input class="numInp" id="numBasement-hybrid" type="number" min="0" required>
+						</div>
+						<div class="label-wrap" id="number-of-parking-spots">
+							<label for="hybr-useless-1">Number of Parking Spots</label>
+							<input class="numInp" id="hybr-useless-1" type="number" min="0" required>
+						</div>
+						<div class="label-wrap" id="number-of-corporations">
+							<label for="hybr-useless-2">Number of Seperate Tenant Companies</label>
+							<input class="numInp" type="number" id="hybr-useless-2" min="0" required>
+						</div>
+
+						<div class="label-wrap" id="maximun-occupancy">
+							<label for="maxPerFloor-hybrid">Maximum Number of Occupants per Floor</label>
+							<input class="numInp" id="maxPerFloor-hybrid" type="number" min="0" required>
+						</div>	
+						<!-- Bug a cause de max-->
+						<div class="label-wrap" id="business-hours">
+							<label for="hybr`">Number of activity hours</label>
+							<input class="numInp" id="hybr-useless-2" type="number" max="24" min="0"  required>
+						</div>	
+							
+                        </div>
+                        
+             </div>
                 
-            </div>
+            	</div>
+			<div class="totalPrice">
+				<input type="radio" id="standard" name="fees" value="standard" /> <label for="standard">Standard</label>
+			<input type="radio" id="premium" name="fees" value="premium" /> <label for="premium">Premium</label>
+			<input type="radio" id="excelium" name="fees" value="excelium" /> <label for="excelium">Excelium</label>
 
-			<input type="radio" id="standard-fees" name="fees" value="standard" /> <label for="standard-fees">Standard</label>
-			<input type="radio" id="premium-fees" name="fees" value="premium" /> <label for="premium-fees">Premium</label>
-			<input type="radio" id="excelium-fees" name="fees" value="excelium" /> <label for="excelium-fees">Excelium</label>
-
+			</div>
+			
             <div class="totalPrice">
                 <div>
 					<h2>Our Pricing</h2>
-					<p id="numElevator-read">Number of elevators :</p>
-					<p id="unitElevator-read">Single unit elevator cost : </p>
-					<p id="totalElevator-read">Total price of the elevators :</p>
-					<p id="feesElevator-read">Installation fees :</p>
-					<P id="totalCost-read">Total Cost : </P>
-					<div class="heading-title heading-dotted text-center" style="width: 70vw;">
-						<h2></h2>
-					</div>
+					<p id="elevator-amount">Number of elevators :</p>
+					<p id="elevator-unit-price">Single unit elevator cost : </p>
+					<p id="elevator-total-price">Total price of the elevators :</p>
+					<p id="installation-fees">Installation fees :</p>
+					<P id="final-price">Total Cost : </P>
+					
                 </div>
             </div>
+
+			<div class="heading-title heading-dotted text-center" style="width: 70vw;">
+				<h2></h2>
+			</div>
             <br><br>
 
             </div>
@@ -293,28 +359,6 @@
 							<h2>(418) 555-1234</h2>
 						</div>
 						<!-- /col #1 -->
-
-						<!-- col #2 -->
-						<div class="col-md-4">
-							<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
-
-							<!-- Newsletter Form -->
-							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
-
-							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
-									<span class="input-group-btn">
-										<button class="btn btn-success" type="submit">Subscribe</button>
-									</span>
-								</div>
-							</form>
-							<!-- /Newsletter Form -->
-
-
-						</div>
-						<!-- /col #2 -->
 
 					</div>
 
@@ -357,8 +401,6 @@
 
 		<script src="assets/js/scripts.js"></script>
 		
-		<!-- STYLESWITCHER - REMOVE -->
-		<script async src="demo_files/styleswitcher/styleswitcher.js"></script>
 
 		<!-- REVOLUTION SLIDER -->
 		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
@@ -372,32 +414,8 @@
 			GMAP.JS 
 			http://hpneo.github.io/gmaps/
 		-->
-		<script src="//maps.google.com/maps/api/js?key=AIzaSyCqCn84CgZN6o1Xc3P4dM657HIxkX3jzPY"></script>
-		<script src="assets/plugins/gmaps.js"></script>
-		<script>
-
-			jQuery(document).ready(function(){
-
-				/**
-					@BASIC GOOGLE MAP
-				**/
-				var map2 = new GMaps({
-					div: '#map2',
-					lat: 46.83580880975302,
-					lng: -71.29180222864782,
-					scrollwheel: true				
-				});
-
-				var marker = map2.addMarker({
-					lat: 46.83580880975302,
-					lng: -71.29180222864782,
-					title: 'Codeboxx'
-				});
-
-			});
-
-		</script>
 
         <script src="assets\js\quote.js"></script>
+		<script src="assets/js/quotenode.js"></script>
 	</body>
 </html>
