@@ -73,7 +73,7 @@ $('input').change(function() {
             break;
         case 'corporate':
             x = (parseInt($('#numFloor-corp').val()) + parseInt($('#numBasement-corp').val()))
-            alert(x)
+            
 
             //Trouver le nombre d'ascencseur total nécessaire  -> ((Etage + Sous-sol)*MaxParEtage)/1000
             elevatorCorp = Math.ceil(x *parseInt($('#maxPerFloor-corp').val()) / 1000)

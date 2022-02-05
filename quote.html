@@ -79,7 +79,7 @@
 						<ul class="list-unstyled">
 							<li><b>Address:</b> 418-725 Boulevard Lebourgneuf <br /> Canada, Montréal</li>
 							<li><b>Phone:</b> (418) 555-1234</li>
-							<li><b>Email:</b> <a href="mailto:support@yourname.com">infos@codeboxx.bizz</a></li>
+							<li><b>Email:</b>infos@codeboxx.bizz</li>
 						</ul>
 					</div>
 
@@ -207,11 +207,12 @@
 
                     <select name="" id="buildType">
                         <option value="">Select</option>
-                        <option value="commercial">Commercial</option>
-                        <option value="corporate">Corporate</option>
-                        <option value="residential">Residential</option>
-                        <option value="hybrid">Hybrid</option>
+                        <option data-filter="commercial" value="commercial">Commercial</option>
+                        <option data-filter="corporate" value="corporate">Corporate</option>
+                        <option data-filter="residential" value="residential">Residential</option>
+                        <option data-filter="hybrid" value="hybrid">Hybrid</option>
                     </select>
+					
                 
 
 				
@@ -309,7 +310,7 @@
 						<!-- Bug a cause de max-->
 						<div class="label-wrap" id="business-hours">
 							<label for="hybr`">Number of activity hours</label>
-							<input class="numInp" id="hybr-useless-2" type="number" min="0"  required>
+							<input class="numInp" id="hybr-useless-2" type="number" max="24" min="0"  required>
 						</div>	
 							
                         </div>
@@ -406,8 +407,6 @@
 
 		<script src="assets/js/scripts.js"></script>
 		
-		<!-- STYLESWITCHER - REMOVE -->
-		<script async src="demo_files/styleswitcher/styleswitcher.js"></script>
 
 		<!-- REVOLUTION SLIDER -->
 		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
@@ -423,5 +422,6 @@
 		-->
 
         <script src="assets\js\quote.js"></script>
+		<script src="assets/js/quotenode.js"></script>
 	</body>
 </html>
